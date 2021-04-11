@@ -16,6 +16,12 @@
 
 
 
+### About"完美EFI_202104"(04-2021)
+
+This version of EFI is based on the 11-2019 version of EFI. It has updated some drivers and added drivers for Intel AC 9560 wireless network card and Bluetooth(itlwn and IntelBluetoothFirmware). However, this driver needs to be forced to be loaded under Clover. In order to minimize the injection of the system, my Clover Bootloader has been replaced with a newer OpenCore. Therefore, this EFI will be the last EFI of Clover and will not be updated in the future.
+
+
+
 ### About"完美EFI_201911"(11-2019)
 
 "完美EFI_201911" is what I tried to configure after a week of research, adding the appropriate driver according to my own hardware. I didn’t expect to try it once and succeeded. Thanks to the driver developer and the author of the tutorial! Many drivers are much simpler and more stable than in March 2019. This time the Hackintosh installation configuration process is recorded in my blog. -> [标签：Hackintosh | Fisher's Blog](http://fisher.lazybone.xyz/tags/hackintosh/)
@@ -34,9 +40,9 @@
 - Shutdown -> OK
 - USB3.0 & USB3.1 -> OK
 
-##### Problems:
+##### Solved Problems:
 
-- Wireless network card didn't work -> Intel AC 9560 no relevant driver, this problem can't be sloved until now
+- Wireless network card didn't work -> (04-2021)Now we can use itlwn to solve this problem. In clover, the driver must be forced to load.
 
 
 
@@ -52,9 +58,9 @@
 - Sleep awakening -> Not tested
 - CPU Turbo -> Not tested
 
-##### Problems:
+##### Solved Problems:
 
-+ Wireless network card didn't work -> Intel AC 9560 no relevant driver, this problem can't be sloved until now
++ Wireless network card didn't work -> (04-2021)Now we can use itlwn to solve this problem. In clover, the driver must be forced to load.
 
 
 
@@ -69,5 +75,5 @@ I can boot normally during the process of using it, But it seems to be stuck in 
 + Unable to shotdown -> Check "FixShutdown" in Clover Configurator
 + Sound card is not working properly -> Suspected to be a config.plist configuration issue, I solve it via https://hackintosher.com/guides/fix-asus-supremefx-s1220a-hackintosh-audio/
 + Onboard wired network card didn't work -> Should be built-in driver is not the latest  version
-+ Wireless network card didn't work -> Intel AC 9560 no relevant driver, this problem can't be sloved until now
++ Wireless network card didn't work -> (04-2021)Now we can use itlwn to solve this problem. In clover, the driver must be forced to load.
 

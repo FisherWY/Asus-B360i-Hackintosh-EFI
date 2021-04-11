@@ -16,6 +16,12 @@ Click here to [README_EN](./README_EN.md)
 
 
 
+### 关于"完美EFI_202104"(2021-04)
+
+这一版本的EFI基于2019-11版本的EFI，更新了部分驱动，添加了Intel AC 9560无线网卡和蓝牙的驱动(itlwn和IntelBluetoothFirmware)，但该驱动在Clover下需要强制加载，出于对系统最少注入的原则，我已将Clover Bootloader更换为更新的OpenCore。因此本EFI将会是Clover的最后一个EFI，以后不会再更新。
+
+
+
 ### 关于"完美EFI_201911"(2019-11)
 
 "完美EFI_201911"是我在研究了一个星期后自己尝试配置的，根据自己的硬件添加相应的驱动。没想到一次配置就完美成功了，感谢驱动的开发者和教程的作者！许多驱动跟2019年3月份相比，都精简、稳定了很多。这一次的黑苹果安装配置过程记录在了我的博客中 -> [标签：Hackintosh | Fisher's Blog](http://fisher.lazybone.xyz/tags/hackintosh/)
@@ -34,9 +40,9 @@ Click here to [README_EN](./README_EN.md)
 - 关机 -> 正常
 - USB3.0 & USB3.1 -> 正常
 
-##### 存在的问题：
+##### 可解决的问题：
 
-+ 无线网卡 -> Intel AC 9560无线网卡无相关驱动，这个问题目前无解
++ 无线网卡 -> Intel AC 9560无线网卡无相关驱动，这个问题已有itlwm作为解决方法，但在Clover下需要强制驱动
 
 
 
@@ -52,9 +58,9 @@ Click here to [README_EN](./README_EN.md)
 - 睡眠唤醒 -> 未测试过，不清楚是否正常工作
 - CPU睿频 -> 未测试过，不清楚是否正常工作
 
-##### 存在的问题：
+##### 可解决的问题：
 
-+ 无线网卡 -> Intel AC 9560无线网卡无相关驱动，这个问题目前无解
++ 无线网卡 -> Intel AC 9560无线网卡无相关驱动，这个问题已有itlwm作为解决方法，但在Clover下需要强制驱动
 
 
 
@@ -64,9 +70,9 @@ Click here to [README_EN](./README_EN.md)
 
 我在使用的过程中能够正常引导开机，但是安装过程中貌似会卡在啰嗦模式
 
-##### 存在的问题：
+##### 可解决的问题：
 
 + 无法关机 -> 后来查到是`config.plist`的配置问题，需要勾选**修复关机**
 + 声卡无法正常工作 -> 怀疑是config.plist配置或驱动问题，最后通过这个帖子解决了问题:  https://hackintosher.com/guides/fix-asus-supremefx-s1220a-hackintosh-audio/
 + 板载网卡无法正常工作 -> 应该是内置的网卡驱动不是最新版本，更换驱动后问题解决
-+ 无线网卡 -> Intel AC 9560无线网卡无相关驱动，这个问题目前无解
++ 无线网卡 -> Intel AC 9560无线网卡无相关驱动，这个问题已有itlwm作为解决方法，但在Clover下需要强制驱动
