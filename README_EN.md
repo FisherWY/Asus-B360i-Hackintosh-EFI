@@ -16,6 +16,14 @@
 
 
 
+### About"OpenCore_EFI_202104"(04-2021)
+
+From this version, EFI has been replaced with OpenCore from the original Clover. This version of EFI has removed many deprecated drivers, updated the necessary drivers, and added Intel AC9560 Wi-Fi and Bluetooth drivers, making the hackintosh closer to perfection. One problem that still exists is that it will automatically wake up after a period of sleep. It is initially suspected that the wake-up is caused by the wireless network card. The cause of this problem is still to be confirmed. If you find a solution to this problem, please tell me. Regarding the migration process this time, I also recorded it in my blog. If you also want to migrate from Clover to OpenCore, you can refer to my migration process and click [here](https://fisher.lazybone.xyz/%E4%BB%8Eclover%E8%BF%81%E7%A7%BB%E5%88%B0opencore.html)  to check out my blog.
+
+Note: This EFI does not remove the configuration of my model, please change this part of the configuration according to your own model.
+
+
+
 ### About"完美EFI_202104"(04-2021)
 
 This version of EFI is based on the 11-2019 version of EFI. It has updated some drivers and added drivers for Intel AC 9560 wireless network card and Bluetooth(itlwn and IntelBluetoothFirmware). However, this driver needs to be forced to be loaded under Clover. In order to minimize the injection of the system, my Clover Bootloader has been replaced with a newer OpenCore. Therefore, this EFI will be the last EFI of Clover and will not be updated in the future.

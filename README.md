@@ -16,6 +16,14 @@ Click here to [README_EN](./README_EN.md)
 
 
 
+### 关于"OpenCore_EFI_202104"(2021-04)
+
+从这一版本开始，EFI由原先的Clover更换为OpenCore。这一版本的EFI去除了许多已经弃用的驱动，更新了必要的驱动，添加了Intel AC9560的Wi-Fi和蓝牙驱动，使得黑苹果更接近于完美。目前尚存在的一个问题就是：睡眠后一段时间会自动唤醒，初步怀疑是无线网卡导致的唤醒，这个问题产生的原因仍有待确认。如果你找到了这个问题的解决方法，请告诉我。关于这一次迁移的过程，我也记录在了我的博客中，如果你也想从Clover迁移到OpenCore，可以参考一下我的迁移过程，点击[这里](https://fisher.lazybone.xyz/%E4%BB%8Eclover%E8%BF%81%E7%A7%BB%E5%88%B0opencore.html)查看我的博客。
+
+注意：这个EFI并没有去除我的机型配置，请根据自己的机型更换这一部分的配置。
+
+
+
 ### 关于"完美EFI_202104"(2021-04)
 
 这一版本的EFI基于2019-11版本的EFI，更新了部分驱动，添加了Intel AC 9560无线网卡和蓝牙的驱动(itlwn和IntelBluetoothFirmware)，但该驱动在Clover下需要强制加载，出于对系统最少注入的原则，我已将Clover Bootloader更换为更新的OpenCore。因此本EFI将会是Clover的最后一个EFI，以后不会再更新。
