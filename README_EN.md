@@ -2,10 +2,6 @@
 
 点这里查看[中文说明](README.md)
 
-### MacOS version I install:
-
-+ macOS High Sierra 10.13.6(17G65)
-
 ### My PC configuration:
 
 + MotherBoard: Asus Rog Strix B360i
@@ -15,6 +11,24 @@
 + Hard Disk: Asgard AN2 Nvme 250GB
 
 
+
+# ----------Big Sur's EFI----------
+
+### MacOS version I install:
+
++ macOS Big Sur（11.4）
+
+### About"OpenCore_EFI_BigSur_202105"(05-2021)
+
+This EFI is the EFI used after the system is upgraded to Big Sur. This EFI discards the nvidia graphics card and uses the integrated graphics card. However, the discrete graphics card is still used in Windows, and the HDMI port needs to be changed to switch between macOS and Windows. For details, please check my [blog](https://fisher.lazybone.xyz/%E4%BB%8Ehigh-sierra%E5%8D%87%E7%BA%A7%E5%88%B0big-sur.html). The current problems are: 1. The mouse and keyboard are very stuck for a period of time after booting, and the mouse is obviously dropping frames. It can be determined that it is a USB custom driver problem, but the specific solution is unknown. If you know how to solve it, you can raise an issue. Thank you very much. 2. After enabling the Bluetooth driver, Wi-Fi becomes very unstable. There should be no solution to this problem at present.
+
+
+
+# ----------High Sierra's EFI----------
+
+### MacOS version I install:
+
++ macOS High Sierra 10.13.6(17G65)
 
 ### About"OpenCore_EFI_202104"(04-2021)
 

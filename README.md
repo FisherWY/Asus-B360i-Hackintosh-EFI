@@ -2,10 +2,6 @@
 
 Click here to [README_EN](./README_EN.md)
 
-### 我安装的MacOS版本：
-
-+ macOS High Sierra 10.13.6(17G65)
-
 ### 我的电脑配置：
 
 + 主板：Asus Rog Strix B360i
@@ -15,6 +11,24 @@ Click here to [README_EN](./README_EN.md)
 + 硬盘：Asgard AN2 Nvme 250GB
 
 
+
+# ----------以下是Big Sur的EFI----------
+
+### 我安装的MacOS版本：
+
++ macOS Big Sur（11.4）
+
+### 关于"OpenCore_EFI_BigSur_202105"(2021-05)
+
+该EFI是系统升级了Big Sur之后使用的EFI，本EFI舍弃了独立显卡，使用集成显卡。但在Windows中仍然使用独立显卡，在macOS与Windows中切换需要换HDMI口，具体详情可以查看我的[博客](https://fisher.lazybone.xyz/%E4%BB%8Ehigh-sierra%E5%8D%87%E7%BA%A7%E5%88%B0big-sur.html)。目前存在的问题是：1. 开机后一段时间内鼠标和键盘非常卡，鼠标有明显掉帧，可以确定是USB定制驱动的问题，但具体解决方案未知，知道如何解决的可以提issue，非常感谢。2. 启用蓝牙驱动之后，Wi-Fi变得非常地不稳定，这个问题目前应该无解。
+
+
+
+# ----------以下是High Sierra的EFI----------
+
+### 我安装的MacOS版本：
+
++ macOS High Sierra 10.13.6(17G65)
 
 ### 关于"OpenCore_EFI_202104"(2021-04)
 
